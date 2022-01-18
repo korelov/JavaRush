@@ -8,7 +8,18 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+        int number = scanner.nextInt();
 
+        do {
+            if (number <= 0 || number >= 5) {
+                System.out.println(line);
+                number = 0;
+            } else {
+                System.out.println(line);
+                number--;
+            }
+        } while (number > 0);
     }
 }
