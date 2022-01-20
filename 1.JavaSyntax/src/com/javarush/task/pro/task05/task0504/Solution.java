@@ -16,11 +16,14 @@ public class Solution {
         for (int i = 0; i < resultArray.length; i++) {
             if (i < firstArray.length) {
                 resultArray[i] = firstArray[f++];
+            } else {
+                resultArray[i]=secondArray[s++];
             }
         }
-        for (int i = firstArray.length; i < resultArray.length; i++) {
-            resultArray[i] = secondArray[s++];
-        }
+//        for (int i = firstArray.length; i < resultArray.length; i++) {
+//            resultArray[i] = secondArray[s++];
+//        }
+
         for (int i = 0; i < resultArray.length; i++) {
             System.out.print(resultArray[i] + ", ");
         }
