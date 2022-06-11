@@ -16,13 +16,36 @@ public class Solution {
 
     public static int countDigits(String string) {
         return string.replaceAll("[^0-9]", "").length();
+//        char[] characters = string.toCharArray();
+//        int count = 0;
+//        for (int i = 0; i < characters.length; i++) {
+//            if (Character.isDigit(characters[i])) {
+//                count++;
+//            }
+//        }
+//        return count;
     }
 
     public static int countLetters(String string) {
         return string.replaceAll("[^a-zA-Zа-яА-Я\\,\\.]", "").length();
+//        char[] chars = string.toCharArray();
+//        int count = 0;
+//        for (int i = 0; i < chars.length; i++) {
+//            if (Character.isLetter(chars[i]) || chars[i] == ',' || chars[i] == '.') {
+//                count++;
+//            }
+//        }
+//        return count;
     }
 
     public static int countSpaces(String string) {
         return string.replaceAll("[^\\ ]", "").length();
+//        int count=0;
+//        for (int i = 0; i < string.length(); i++) {
+//            if(string.charAt(i)==' '){
+//                count++;
+//            }
+//        }
+//        return count;
     }
 }
